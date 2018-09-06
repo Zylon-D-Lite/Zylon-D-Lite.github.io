@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Zylon D. Lite</title>
+		<link rel="shortcut icon" type="image/png" href="me_logo_small.png" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gamja+Flower" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300" />
+		<link rel="stylesheet" href="sty_me.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="banner">
+			<span id="logo" onClick="gotoHead()" > Zylon D Lite </span>
+			<ul id="tabs">
+				<li><a onClick="gotoProgrammer()">Programmer</a></li>
+				<li><a onClick="gotoWebdev()">Web Developer</a></li>
+				<li><a onClick="gotoTeacher()">Teacher</a></li>
+			</ul>
+		</div>
+		<div id="head_panel" class="panel">
+			<div id="img_frame" alt="me"></div>
+			<p>"I try to tell computers what to do."</p>
+		</div>
+		<div id="programmer" class="panel">
+			<div id="terminal">
+				<p>
+					<prep>#ifndef</prep> <macro>ZDL_DIRIFF_CONFIG_H_</macro></br>
+					<prep>#define</prep> <macro>ZDL_DIRIFF_CONFIG_H_</macro></br>
+					<prep>#include</prep> <str>"memory"</str></br>
+					<prep>#include</prep> <str>"tclap/CmdLine.h"</str></br>
+					<tab1/><keyword>class</keyword> Config {</br>
+					<tab1/><keyword>public</keyword>:</br>
+					<tab2/><keyword>static</keyword> Config<oper>&amp;</oper> <func>instance</func>();</br>
+					<tab2/><keyword>void</keyword> <func>init</func><keyword>(int</keyword> argc,
+					<keyword>char</keyword> <oper>*</oper>argv[]);</br>
+					<tab1/><keyword>private</keyword>:</br>
+					<tab2/>Config() <oper>=</oper> <keyword>default</keyword>;</br>
+					<tab2/>Config(<keyword>const</keyword> Config<oper>&</oper> other)
+						<oper>=</oper> <keyword>delete</keyword>;</br>
+					<tab2/>Config(<keyword>const</keyword> Config<oper>&&</oper> other)
+						<oper>=</oper> <keyword>delete</keyword>;</br>
+
+					<tab2/>Config<oper>&</oper>
+						<keyword>operator</keyword><oper>=</oper>
+						(<keyword>const</keyword> Config<oper>&</oper> other)
+						<oper>=</oper> <keyword>delete</keyword>;</br>
+					<tab2/>Config<oper>&</oper>
+						<keyword>operator</keyword><oper>=</oper>
+						(<keyword>const</keyword> Config<oper>&&</oper> other)
+						<oper>=</oper> <keyword>delete</keyword>;</br>
+					<tab2/><oper>~</oper>Config() <oper>=</oper> <keyword>default</keyword>;</br>
+					}; </br>
+					<prep>#endif</prep>
+				</p>
+			</div>
+			<p class="description">
+				I create efficient, and elegant solutions to your software
+				problems, from the conception of idea to the release stage.
+				I favor code quality above all which means the end product
+				is easily maintainable and performant.
+			</p>
+			<a href="#"class="try_btn">Check out my projects <i class="fas fa-arrow-circle-right"></i></a>
+		</div>
+		<div id="webdev" class="panel">
+			<div id="web_animate">
+				<div><i class="fas fa-globe"></i></div>
+			</div>
+		</div>
+
+		<div id ="teacher" class="panel">
+
+		</div>
+		<div id="foot_panel">
+			<p id="copy_right">&copy; Copyright 2018-2049 copyleft blah blah blah
+				</br>Do whatever you want with this website.
+			</p>
+			<ul id = "extra">
+				<p>INFO</p>
+				<li> <a href="#">About</a> </li>
+				<li> <a href="#">Blog</a> </li>
+				<li> <a href="#">Contact</a> </li>
+				<ul id="media">
+					<li>
+						<a href="#">
+							<img src="fb_icon_small.png" alt="facebook"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="gplus_logo_small.png" alt="google+"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="github_icon_small.png" alt="github"/>
+						</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
+	</body>
+	<script src="js_me.js"></script>
+</html>
+
